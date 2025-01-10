@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Institute of Research and Technology</title>
+    <title>TopperwalaGyan - Institute of Training and Teaching Material</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -13,10 +13,11 @@
             background-color: #f0f4f8;
         }
         .header {
-            background-color: #4CAF50;
+            background: linear-gradient(to right, #4CAF50, #2e7d32);
             color: white;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .navbar {
             display: flex;
@@ -28,6 +29,7 @@
             color: white;
             text-decoration: none;
             text-align: center;
+            transition: background-color 0.3s;
         }
         .navbar a:hover {
             background-color: #ddd;
@@ -36,6 +38,7 @@
         .content {
             padding: 20px;
             text-align: center;
+            animation: fadeIn 1s ease-in;
         }
         footer {
             text-align: center;
@@ -43,23 +46,35 @@
             font-size: 12px;
             color: #777;
         }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>Institute of Research and Technology</h1>
-        <p>Your Gateway to Innovation and Excellence</p>
+        <h1>Welcome to TopperwalaGyan</h1>
+        <p>Institute of Training and Teaching Material</p>
     </div>
     <div class="navbar">
         <a href="index.html">Home</a>
-        <a href="faculty.html">Faculty</a>
-        <a href="research.html">Research</a>
-        <a href="contact.html">Contact</a>
+        <a href="math.html">Mathematics</a>
+        <a href="chemistry.html">Chemistry</a>
+        <a href="physics.html">Physics</a>
+        <a href="cs.html">Computer Engineering</a>
+        <a href="me.html">Mechanical Engineering</a>
+        <a href="astro.html">Astrophysics Engineering</a>
     </div>
     <div class="content">
-        <h2>Welcome to Our Institute</h2>
-        <p>We are dedicated to fostering innovation and providing quality education.</p>
+        <h2>About Us</h2>
+        <p>Welcome to TopperwalaGyan, an institute dedicated to producing high-quality educational materials in the fields of science and mathematics. Since our establishment in 1995, we have been committed to enhancing the learning experience for students and researchers around the world. Our website houses a vast collection of articles, technical books, and resources tailored for both school and college-level education. Our goal is to provide innovative and accessible teaching materials that cater to the diverse needs of learners. Whether you are a student seeking supplemental resources or a researcher looking for advanced materials, TopperwalaGyan is your go-to platform. We pride ourselves on our dedication to education and our continuous effort to adapt to the evolving needs of the academic community. Join us as we strive to make a positive impact on education globally, helping individuals achieve their academic and professional goals.</p>
     </div>
-    <footer>Maintained by Institute of Research and Technology</footer>
+    <footer>Maintained by TopperwalaGyan</footer>
 </body>
 </html>
